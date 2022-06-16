@@ -15,6 +15,7 @@ import {
   ScrollView,
   StatusBar,
   useColorScheme,
+  Text
 } from 'react-native';
 import { NavigationContainer, ParamListBase } from '@react-navigation/native';
 import {
@@ -48,6 +49,7 @@ function HomeScreen({ navigation }: NativeStackScreenProps<ParamListBase>) {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
+        <Text style={{fontSize:30, textAlign: 'center'}}>This is a react native page</Text>
         <Button
           title={'Start Flutter Screen'}
           onPress={() => navigation.navigate('Flutter')}
