@@ -37,7 +37,7 @@ allprojects {
         // We need to duplicate this because of the following issue:
         // https://stackoverflow.com/questions/65089494/3rd-party-maven-dependency-in-react-native-npm-module
         maven {
-            url "$rootDir/../node_modules/flutter-module-rn/build/host/outputs/repo"
+            url "$rootDir/../node_modules/flutter_module_rn/build/host/outputs/repo"
         }
         maven {
             url "$storageUrl/download.flutter.io"

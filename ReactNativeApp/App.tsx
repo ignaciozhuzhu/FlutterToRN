@@ -22,7 +22,7 @@ import {
   createNativeStackNavigator,
   NativeStackScreenProps,
 } from '@react-navigation/native-stack';
-import { FlutterScreen } from 'flutter-module-rn';
+import { FlutterScreen } from 'flutter_module_rn';
 
 // import { Colors, Header } from 'react-native/Libraries/NewAppScreen';
 const Colors = {
@@ -49,7 +49,7 @@ function HomeScreen({ navigation }: NativeStackScreenProps<ParamListBase>) {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Text style={{fontSize:30, textAlign: 'center'}}>This is a react native page</Text>
+        <Text style={{fontSize:30, textAlign: 'center'}}>1This is a react native page</Text>
         <Button
           title={'Start Flutter Screen'}
           onPress={() => navigation.navigate('Flutter')}

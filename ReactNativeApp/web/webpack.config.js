@@ -20,7 +20,7 @@ const __DEV__ = process.env.NODE_ENV === 'development';
 const compileNodeModules = [
   // Add every react-native package that needs compiling
   'react-native-uncompiled',
-  'flutter-module-rn',
+  'flutter_module_rn',
 ].map(moduleName => path.resolve(appDirectory, `node_modules/${moduleName}`));
 const babelLoaderConfiguration = {
   test: /\.js$|tsx?$/,
@@ -102,11 +102,11 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: 'node_modules/flutter-module-rn/build/web/assets',
+          from: 'node_modules/flutter_module_rn/build/web/assets',
           to: 'assets',
         },
         {
-          from: 'node_modules/flutter-module-rn/build/web/icons',
+          from: 'node_modules/flutter_module_rn/build/web/icons',
           to: 'icons',
         },
       ],
