@@ -6,6 +6,12 @@
       <excludeFolder url="file://$MODULE_DIR$/flutter_module_rn/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/flutter_module_rn/build" />
       <excludeFolder url="file://$MODULE_DIR$/flutter_module_rn/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ReactNativeApp/node_modules/flutter-module-rn/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ReactNativeApp/node_modules/flutter-module-rn/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ReactNativeApp/node_modules/flutter-module-rn/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ReactNativeApp/node_modules/flutter_module_rn/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ReactNativeApp/node_modules/flutter_module_rn/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ReactNativeApp/node_modules/flutter_module_rn/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,4 +1,4 @@
-import { NativeModules, Platform, Text, View } from 'react-native'
+import { NativeModules, Platform, Text, View, ActivityIndicator, StyleSheet } from 'react-native'
 import React, { useEffect } from 'react'
 
 const { FlutterModuleRn } = NativeModules;
@@ -6,12 +6,24 @@ const { FlutterModuleRn } = NativeModules;
 const FlutterScreen = () => {
   useEffect(() => {
     FlutterModuleRn.startFlutterActivity('', 0, (text) => {
-      console.log(text);
+      //alert(text);Hello1 from RN wrapper for Flutter {Platform.OS}!
     });
   }, [])
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center"
+  },
+  horizontal: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    padding: 10
+  }
+});
   return (
-    <View>
-      <Text>Hello from RN wrapper for Flutter {Platform.OS}!</Text>
+    <View style={[styles.container, styles.horizontal]}>
+     <ActivityIndicator size="large" />
     </View>
   )
 }
